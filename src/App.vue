@@ -1,20 +1,19 @@
 <template>
-  <div id="nav">
-      <router-link to="/">Home</router-link>
-  </div>
+  <header-comp />
   <router-view />
 </template>
 
 <script>
+import HeaderComp from "@/components/layout/Header.vue"
+
+export default {
+  components: {
+    HeaderComp,
+  }
+}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss">
+  @import '@/assets/style/common.scss';
+  @import '@/assets/style/reset.scss';
+  </style>
