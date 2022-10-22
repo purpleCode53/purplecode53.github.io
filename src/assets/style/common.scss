@@ -1,0 +1,51 @@
+@import url('http://fonts.cdnfonts.com/css/fira-mono');
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", 나눔고딕, "Nanum Gothic", "Noto Sans KR", "Noto Sans CJK KR", arial, 돋움, Dotum, Tahoma, Geneva, sans-serif;
+}
+.main_header {
+    height:72px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 8px;
+}
+
+.fl {float:left;}
+
+.fr {float: right;}
+
+.logo {
+    width : 28px;
+    height : 28px;
+}
+
+.logo > img {
+    width : 28px;
+    height : 28px;
+}
+
+.logo_box{
+    border-left:solid 3px rgb(0, 0, 0);
+    padding-left: 3px;
+    
+}
+.home_link {
+    font-size: 14px;
+    font-family: "Fira Mono", monospace;
+}
+
+.ml5 { margin-left:5px;}
+.ml10 { margin-left:10px;}
+.ml15 { margin-left:15px;}
+
+.mr5 { margin-right:5px;}
+.mr10 { margin-right:10px;}
+.mr15 { margin-right:15px;}
+
+//font color
+.purple {color:rgb(140 20 210)}
+.yellow {color:rgb(255, 213, 0)}
+.red {color:rgb(255, 0, 0)}
