@@ -96,14 +96,13 @@ export default {
     -webkit-box-align: center;
     align-items: center;
     margin-right: 0.875rem;
-    color: #12B888;
     text-decoration: none;
-    font-weight: 500;
     font-size: 1rem;
 }
 
 .post_tag a{
     color:#aa10dd;
+    font-weight: bold;
 }
 
 body {
