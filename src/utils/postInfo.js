@@ -12,6 +12,13 @@ const posts = [
         'date': '2022-10-16',
         'tag': ['test2', 'md1', 'md2'],
         'description': 'sample md file 2',
+    },
+    {
+        'name': '자주 사용하는 git 명령어 정리',
+        'title': '자주 사용하는 git 명령어 정리',
+        'date': '2022-11-01',
+        'tag': ['git'],
+        'description': '개인 공부 시 자주 사용하는 git 명령어 정리',
     }
 ]
 
