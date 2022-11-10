@@ -7,6 +7,7 @@ const $axios = axios.create({
 export const getMD = (postName) => {
     return $axios.get(`/posts/${postName}.md`)
 }
+
 export const getPosts = () => {
     return $axios.get('/posts/index.json')
 }
