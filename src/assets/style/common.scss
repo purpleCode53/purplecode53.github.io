@@ -108,17 +108,16 @@ pre>code::after {
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 1px;
-    background: #9b9b9b;
     padding: 2px 7px;
     line-height: 15px;
     height: 15px;
     border-radius: 0 0 0 2px;
 }
 
-pre>code.markdown::after{content: "markdown";color: #ffffff;}
-pre>code.javascript::after{content: "javascript";color: #FFD500;}
-pre>code.css::after{content: "css";color: #3ba2f7;}
-pre>code.java::after{content: "java";color: #ff9c24;}
+pre>code.markdown::after{content: "markdown"; color: #ffffff; background: #9b9b9b;}
+pre>code.javascript::after{content: "javascript"; color: #ffffff; background: #FFD500;}
+pre>code.css::after{content: "css"; color: #ffffff; background: #3ba2f7;}
+pre>code.java::after{content: "java"; color: #ffffff;background: #ff9c24;}
 
 blockquote blockquote {
     margin-bottom: -15px;
