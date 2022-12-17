@@ -15,7 +15,7 @@ export default {
     try {
       const param = this.$route.params.title
       const post = await import(`@/contents/${param}.md`)
-      console.log(post.default)
+      //console.log(post.default)
       this.contents = converter.htmlConverter(post.default)
     } catch (e) {
       console.log(e)
