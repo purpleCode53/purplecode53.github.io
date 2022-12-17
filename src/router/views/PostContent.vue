@@ -1,8 +1,8 @@
 <template>
     <Container>
-      <div v-html="contents"></div>
+        <div v-html="contents"></div>
     </Container>
-  </template>
+</template>
 
 <script>
 import converter from "@/utils/htmlConverter";
@@ -28,7 +28,6 @@ export default {
             console.log(e);
         }
     }
-    
 }
 
 </script>
