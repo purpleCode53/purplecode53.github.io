@@ -1,17 +1,13 @@
 <template>
-    <Container>
+    <div class="postContainer">
         <div v-html="contents"></div>
-    </Container>
+    </div>
 </template>
 
 <script>
 import converter from "@/utils/htmlConverter";
-import Container from '@/components/layout/Container.vue';
 
 export default {
-    components: { 
-        Container 
-    },
     data() {
         return {
             contents: null
@@ -31,3 +27,7 @@ export default {
 }
 
 </script>
+
+<style lang="scss">
+    @import '@/assets/style/markdown.scss';
+</style>
