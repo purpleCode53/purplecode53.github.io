@@ -1,26 +1,34 @@
 <template>
-    <div v-html="contents"></div>
+    <Container>
+      <div v-html="contents"></div>
+    </Container>
   </template>
 
-<script> 
+<script>
 import converter from "@/utils/htmlConverter";
+import Container from '@/components/layout/Container.vue';
 
 export default {
-  data() {
-    return {
-      contents: null
+    components: { 
+        Container 
+    },
+    data() {
+        return {
+            contents: null
+        };
+    },
+    async created() {
+        try {
+            const param = this.$route.params.title;
+            const post = await import(`@/contents/${param}.md`);
+            //console.log(post.default)
+            this.contents = converter.htmlConverter(post.default);
+        }
+        catch (e) {
+            console.log(e);
+        }
     }
-  },
-  async created() {
-    try {
-      const param = this.$route.params.title
-      const post = await import(`@/contents/${param}.md`)
-      //console.log(post.default)
-      this.contents = converter.htmlConverter(post.default)
-    } catch (e) {
-      console.log(e)
-    }
-  },
+    
 }
 
 </script>
