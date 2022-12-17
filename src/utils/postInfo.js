@@ -19,6 +19,13 @@ const posts = [
         'date': '2022-11-01',
         'tag': ['git'],
         'description': '개인 공부 시 자주 사용하는 git 명령어 정리',
+    },
+    {
+        'name': '마크다운 문법 정리',
+        'title': '마크다운 문법 정리',
+        'date': '2022-12-17',
+        'tag': ['markdown'],
+        'description': '.md 파일 작성 시 필요한 markdown 문법 정리',
     }
 ]
 
