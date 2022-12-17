@@ -117,6 +117,8 @@ pre>code::after {
 
 pre>code.markdown::after{content: "markdown";color: #ffffff;}
 pre>code.javascript::after{content: "javascript";color: #FFD500;}
+pre>code.css::after{content: "css";color: #3ba2f7;}
+pre>code.java::after{content: "java";color: #ff9c24;}
 
 blockquote blockquote {
     margin-bottom: -15px;
